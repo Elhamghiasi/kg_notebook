@@ -66,3 +66,41 @@ https://docs.stardog.com/tutorials/rdf-graph-data-model
 - The edges are **directed** from one node to another.
 - Edges are directional and can be thought of as arrows (`→`).
 - An edge points from one node to another node.
+
+
+
+# RDF Graphs
+
+A **directed graph** is a set of objects, usually called **nodes**, connected by lines, usually called **edges**, that are **directed** from one node to another.
+
+- Edges are directional and can be thought of as arrows (`→`)
+- Each edge points from one node to another node
+
+---
+
+# RDF Terminology
+
+In RDF, graph components are defined as follows:
+
+- **Edge** → *Triple*
+- **Source node** → *Subject*
+- **Edge name** → *Predicate*
+- **Target node** → *Object*
+
+A node can appear:
+- As a **subject** in one triple
+- As an **object** in another triple
+
+---
+
+# RDF Graph Definition
+
+An **RDF graph** is defined as a **set of RDF triples**.
+
+Key characteristics:
+
+- Nodes are **not declared separately**
+- Nodes are **implicitly defined by the edges (triples)**
+- An RDF node **cannot exist without participating in at least one triple**
+
+This definition closely matches the informal notion of a directed graph, with the key constraint that nodes only exist through their relationships.
