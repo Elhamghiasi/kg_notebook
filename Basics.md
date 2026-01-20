@@ -50,3 +50,23 @@ Values such as strings, dates, and integers:
 ## RDF Triples
 
 All knowledge is encoded as **triples**:
+
+
+- `(entity) – (relationship) – (entity or value)`
+
+---
+
+## Examples Based on My Schema
+
+### Example 1: A Publication Submitted by an Author
+
+```ttl
+:Publication123   :submittedBy   :Author456
+
+:Publication123   :hasTitle         "A Review of Knowledge Graphs"
+:Publication123   :hasAbstract      "This paper studies..."
+:Publication123   :dateOfSubmission "2025-01-15"^^xsd:date
+:Publication123   :hasDOI           "10.1000/xyz123"
+
+
+
