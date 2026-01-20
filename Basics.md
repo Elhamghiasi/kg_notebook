@@ -68,5 +68,26 @@ All knowledge is encoded as **triples**:
 :Publication123   :dateOfSubmission "2025-01-15"^^xsd:date
 :Publication123   :hasDOI           "10.1000/xyz123"
 
+```
+
+## Author Information (via Agent)
+
+In this schema, **Author** is modeled as a **Role** that is **performed by** an **Agent** (a person).
+
+- The **Agent** represents the actual person.
+- Personal information such as name and contact details are stored on the **Agent**, not on the **Role**.
+- The **Author** role links to the **Agent** who performs it.
+
+### Schema Structure
+
+### Example Triples
+
+```turtle
+:Agent789   :hasFirstName     "Elham" ;
+            :hasFamilyName    "Ghiasi" ;
+            :hasEmailAddress  "elham@university.edu" .
+
+:Author456  :performedRole   :Agent789 .
+
 
 
