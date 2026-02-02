@@ -33,3 +33,12 @@ WHERE {
   ?university rdf:type ex:University .
   ?university ex:locatedIn ex:Ohio .
 }
+```
+
+#### This process involves:
+
+1. Understanding the user’s intent
+2. Identifying relevant entities
+3. Identifying relations between entities
+4. Constructing a syntactically valid SPARQL query
+All of these steps together constitute SPARQL query generation.
