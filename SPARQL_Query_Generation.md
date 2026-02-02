@@ -15,3 +15,21 @@ The goal is to translate *what a user wants to know* into a **valid SPARQL query
 Humans typically ask questions in **natural language**, while knowledge graphs are queried using **SPARQL**.  
 SPARQL query generation acts as a **bridge** between these two representations.
 
+---
+### Natural Language Question → SPARQL Query → Knowledge Graph → Answer
+
+
+---
+
+## Example
+
+**Natural language question:**
+> Which universities are located in Ohio?
+
+**Generated SPARQL query:**
+```sparql
+SELECT ?university
+WHERE {
+  ?university rdf:type ex:University .
+  ?university ex:locatedIn ex:Ohio .
+}
