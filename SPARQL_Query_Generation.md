@@ -42,3 +42,27 @@ WHERE {
 3. Identifying relations between entities
 4. Constructing a syntactically valid SPARQL query
 All of these steps together constitute SPARQL query generation.
+
+
+
+---
+
+## Approaches to SPARQL Query Generation
+
+### Rule-Based Approaches
+- Use manually defined rules to map natural language questions to SPARQL query patterns
+- Highly precise
+- Difficult to scale and maintain for large or complex ontologies
+
+### Template-Based Approaches
+- Use predefined SPARQL query templates with placeholders
+- More flexible than rule-based approaches
+- Still limited in handling diverse or complex question structures
+
+### Machine Learning / LLM-Based Approaches
+- Use machine learning models or large language models (LLMs) to generate SPARQL queries directly
+- Often enhanced with:
+  - ontology or schema context
+  - few-shot examples
+  - prompt engineering techniques
+  - query validation or correction steps
